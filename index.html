@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <main>
+      <div id="data"></div>
+      <button id="pop-up-button" onclick="openPopUp()">Начать</button>
+      <div class="pop-up pop-up--closed">
+        <div id="pop-up__container">
+          <h3>Регистрация</h3>
+          <div id="pop-up__input-container">
+            <input id="pop-up__name" type="text" placeholder="Имя" />
+            <input id="pop-up__second-name" type="text" placeholder="Фамилия" />
+            <input id="pop-up__patronymic" type="text" placeholder="Отчество" />
+            <input id="pop-up__email" type="email" placeholder="Почта" />
+            <input id="pop-up__password" type="password" placeholder="Пароль" />
+          </div>
+          <button onclick="closePopUp()">Отправить</button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

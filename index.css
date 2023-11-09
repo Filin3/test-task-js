@@ -1,0 +1,98 @@
+body,
+h3,
+p {
+  margin: 0;
+}
+
+body {
+  width: 100dvw;
+  height: 100dvh;
+  background: linear-gradient(
+    180deg,
+    rgb(174, 255, 251) 0%,
+    rgb(255, 255, 255) 100%
+  );
+}
+
+button {
+  border: 1px solid black;
+  background-color: rgb(174, 255, 251);
+  height: 2rem;
+  border-radius: 0.5rem;
+  transition-duration: 0.1s;
+}
+
+input {
+  outline: none;
+  border: none;
+  height: 20px;
+}
+
+button:hover {
+  box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 50%);
+}
+
+#pop-up-button {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pop-up {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 50%);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.pop-up--closed {
+  display: none;
+}
+
+#pop-up__container {
+  padding: 0.5rem;
+  max-width: 500px;
+  background-color: rgb(174, 255, 251);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#pop-up__input-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+
+@media screen and (min-width: 720px) {
+  #pop-up__input-container input:last-child {
+    transform: translate(calc(-50% - 0.5rem / 2));
+  }
+}
+
+@media screen and (max-width: 720px) {
+  #pop-up__input-container {
+    flex-direction: column;
+  }
+}
+
+#data {
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.data__container {
+  box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 50%);
+  background-color: white;
+  border-radius: 1rem;
+  padding: 1rem;
+}
